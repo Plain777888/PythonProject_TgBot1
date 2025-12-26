@@ -2,5 +2,12 @@
 __pycache__/
 *.pyc
 .env.local
-*.log
 venv/
+*.log
+logs/*.log
+!logs/.gitkeep
+*.db
+notes.db
+*.sqlite
+*.sqlite3
+temp_*

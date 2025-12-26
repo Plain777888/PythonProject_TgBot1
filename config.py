@@ -31,10 +31,10 @@ console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(formatter)
 console_handler.setLevel(logging.INFO)
 
-# Логирование в файл с ротацией (макс. 5 МБ, 5 файлов бэкапа)
+# Логирование в файл с ротацией
 file_handler = RotatingFileHandler(
     filename=f'{log_dir}/bot.log',
-    maxBytes=5 * 1024 * 1024,  # 5 MB
+    maxBytes=5 * 1024 * 1024,
     backupCount=5,
     encoding='utf-8'
 )
